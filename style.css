@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+ 
+}
+
+body {
+    background-color: black;
+    color: white;
+ 
+
+}
+
+main {
+    background-image: url("assets/UA-en-20240820-TRIFECTA-perspective_WEB_1f6bc4f7-df2d-4edb-ae95-00882ae6028b_small.jpg");
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+}
+
+main nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+    overflow-y: hidden;
+    margin-left: 23px;
+}
+
+nav .btn-get {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+nav .btn {
+    background-color: rgba(23, 23, 23, 0.9);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    backdrop-filter: blur(23px);
+    font-size: 18px;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 45px;
+
+
+}
+
+.hero> :first-child {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.hero> :nth-child(2) {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero .btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hero input {
+    background-color: rgba(23, 23, 23, 0.9);
+    color: white;
+    padding: 16px 111px 14px 0px;
+    border: none;
+    /* padding-right: 90px; */
+    border-radius: 5px;
+    border: 0.5px solid white;
+    text-align: center;
+
+}
+
+.seperation {
+    background-color: rgb(59, 57, 57);
+    height: 10px;
+    width: 100%;
+}
+
+.section .sec1>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.section .sec1>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+.section .sec1>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+@media (max-width : 800px) {
+    .sec1 {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+    align-items: center;
+}
+
+.faq {
+    padding: 30px;
+    background-color: black;
+}
+
+.faq h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.faq-box:hover {
+    background-color: rgb(215, 204, 204);
+    color: rgb(0, 0, 0);
+}
+
+.faq-box {
+    background-color: gray;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 12px auto;
+    cursor: pointer;
+    color: white;
+}
+
+/* footer */
+.footer-section {
+    width: 100%;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul {
+    list-style: none;
+    text-decoration: underline;
+}
+
+ul li {
+    margin-top: 0.45rem;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 0;
+
+}
+
+@media screen and (max-width : 900px) {
+    .foot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .foot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.foot-btn {
+    background-color: rgba(0, 0, 0, 0.523);
+    color: white;
+    padding: 7px 11px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+.footer-title a {
+overflow-y: hidden;
+}
+
+.foot-end {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
